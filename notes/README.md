@@ -1,4 +1,4 @@
-Mac and iOS notes
+notes
 =========
 
-notes/ code snippets during development of Mac/iOS projects
+All kinds of notes
