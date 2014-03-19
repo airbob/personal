@@ -138,6 +138,14 @@ xmlns:vc="clr-namespace:Visifire.Charts;assembly=WPFVisifire.Charts"
 
 **Grid** Arranges controls in rows and columns and a **StackPanel** arranges controls in a single row either vertically or horizontally
 
+### how to bind slider and label?
+```c#
+<Grid x:Name="MyChartGrid2"  Margin="5,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+<Slider Name="slider1" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" Width="500" SmallChange="1" IsSnapToTickEnabled="True" Maximum="100" Value="49" ValueChanged="Slider_ValueChanged" />
+<Label Name="label1" Content="{Binding ElementName=slider1, Path=Value}"   HorizontalAlignment="Left" Margin="589,10,0,0" VerticalAlignment="Top"/>
+</Grid>
+```
+
 ## Visifire
 
 ### how to format Y axis to 0.0001 digits?
