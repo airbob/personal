@@ -133,3 +133,22 @@ xmlns:vc="clr-namespace:Visifire.Charts;assembly=WPFVisifire.Charts"
 
 ### comparison of chart libraries in wpf:
 [ref](http://stackoverflow.com/a/16180699/874585)
+
+
+## Visifire
+
+### how to format Y axis to 0.0001 digits?
+```c#
+Axis axisY = new Axis();
+axisY.ValueFormatString = "#,0.0000#";
+```
+
+### how to change marker size?
+```c#
+DataPoint dataPoint = new DataPoint();
+dataPoint.XValue = val1;
+dataPoint.YValue = val2;
+dataPoint.MarkerScale = 0.1;
+```
+
+### how to change marker size?
