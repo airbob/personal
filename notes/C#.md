@@ -134,6 +134,9 @@ xmlns:vc="clr-namespace:Visifire.Charts;assembly=WPFVisifire.Charts"
 ### comparison of chart libraries in wpf:
 [ref](http://stackoverflow.com/a/16180699/874585)
 
+### wpf controls
+
+**Grid** Arranges controls in rows and columns and a **StackPanel** arranges controls in a single row either vertically or horizontally
 
 ## Visifire
 
