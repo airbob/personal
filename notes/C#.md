@@ -151,4 +151,8 @@ dataPoint.YValue = val2;
 dataPoint.MarkerScale = 0.1;
 ```
 
-### how to change marker size?
+### how to change marker style?
+```c#
+DataSeries dataSeries = new DataSeries();
+dataSeries.MarkerType = MarkerTypes.Square;
+```
