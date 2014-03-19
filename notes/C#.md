@@ -144,6 +144,15 @@ xmlns:vc="clr-namespace:Visifire.Charts;assembly=WPFVisifire.Charts"
 <Slider Name="slider1" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" Width="500" SmallChange="1" IsSnapToTickEnabled="True" Maximum="100" Value="49" ValueChanged="Slider_ValueChanged" />
 <Label Name="label1" Content="{Binding ElementName=slider1, Path=Value}"   HorizontalAlignment="Left" Margin="589,10,0,0" VerticalAlignment="Top"/>
 </Grid>
+
+        private void Slider_ValueChanged(object sender,
+        RoutedPropertyChangedEventArgs<double> e)
+        {
+            // ... Get Slider reference.
+            var slider = sender as Slider;
+            int value = (int)slider.Value;
+            this.Title = "Value: " + value.ToString("0.0") + "/" + slider.Maximum;
+        }
 ```
 
 ## Visifire
