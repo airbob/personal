@@ -117,3 +117,9 @@ $timezones = array(
     'Pacific/Fiji'         => "(GMT+12:00) Fiji",
 );
 ```
+
+### split string by spaces/tabs
+```php
+$words=$_GET["word"];
+$word = preg_split('/\s+/', $words);
+```
