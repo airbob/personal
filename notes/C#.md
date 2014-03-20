@@ -155,6 +155,10 @@ xmlns:vc="clr-namespace:Visifire.Charts;assembly=WPFVisifire.Charts"
         }
 ```
 
+### how to use progress bar
+[ref1](http://www.codeproject.com/Articles/38555/WPF-ProgressBar) <br>
+[ref2](http://www.wpf-tutorial.com/misc-controls/the-progressbar-control/)
+
 ## Visifire
 
 ### how to format Y axis to 0.0001 digits?
