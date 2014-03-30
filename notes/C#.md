@@ -165,6 +165,20 @@ xmlns:vc="clr-namespace:Visifire.Charts;assembly=WPFVisifire.Charts"
 ProgressBar1.Visibility = Visibility.Hidden;
 ```
 
+### how to implement a "select foder dialog"
+
+1. add reference of System.Windows.Forms (located at  C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\....) <br>
+2. using System.Windows.Forms; <br>
+3. add following code inside the methods:<br>
+```c#
+var dialog = new System.Windows.Forms.FolderBrowserDialog();
+System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+var folder = dialog.SelectedPath;
+Debug.WriteLine(folder);
+var subFolders = System.IO.Directory.GetDirectories(folder);
+Debug.WriteLine(subFolders[0]);
+```
+
 ## Visifire
 
 ### how to format Y axis to 0.0001 digits?
