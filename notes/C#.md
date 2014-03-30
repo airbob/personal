@@ -186,3 +186,8 @@ dataPoint.MarkerScale = 0.1;
 DataSeries dataSeries = new DataSeries();
 dataSeries.MarkerType = MarkerTypes.Square;
 ```
+
+### how to change dataSeries display name:
+```c#
+ dataSeries.LegendText = "series name";
+```
