@@ -132,11 +132,13 @@ a[href$=".pdf"] (end with pdf)
 
 * how to select the non-first li
 
-``` li+li``` 
+```css
+li+li
+``` 
 
 * put background img center of div
 
-```
+```css
 background-position: 50% 50%,
 background-repeat: no-repeat，
 ```
