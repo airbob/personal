@@ -437,3 +437,14 @@ NSURL *mobileurl = [NSURL URLWithString:@"http://campusbus.ntu.edu.sg/ntubus/ind
         NSLog(@"Error = %@", error);
     }
 ```
+
+### Delete the extra separator of UITableView in iOS 7
+
+```objective-c
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{        
+    return [UIView new];
+    // If you are not using ARC:
+    // return [[UIView new] autorelease];
+}
+```
