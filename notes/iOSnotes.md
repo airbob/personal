@@ -454,3 +454,10 @@ NSURL *mobileurl = [NSURL URLWithString:@"http://campusbus.ntu.edu.sg/ntubus/ind
 
 ### long press to re-ordering tableview cells
 [reference](https://github.com/bvogelzang/BVReorderTableView)
+
+### how to add line to UIView?
+```objective-c
+UIView * separator = [[UIView alloc] initWithFrame:CGRectMake(20, 104, 320, (1.0 / [UIScreen mainScreen].scale) / 2)];
+    separator.backgroundColor = [UIColor colorWithWhite:0.7 alpha:1];
+    [self.view addSubview:separator];
+```
