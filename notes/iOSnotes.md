@@ -451,3 +451,6 @@ NSURL *mobileurl = [NSURL URLWithString:@"http://campusbus.ntu.edu.sg/ntubus/ind
 
 ### how to add side bar to the view
 [reference](http://www.appcoda.com/ios-programming-sidebar-navigation-menu/)
+
+### long press to re-ordering tableview cells
+[reference](https://github.com/bvogelzang/BVReorderTableView)
