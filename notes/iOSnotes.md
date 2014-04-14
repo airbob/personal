@@ -452,6 +452,9 @@ NSURL *mobileurl = [NSURL URLWithString:@"http://campusbus.ntu.edu.sg/ntubus/ind
 ### how to add side bar to the view
 [reference](http://www.appcoda.com/ios-programming-sidebar-navigation-menu/)
 
+problem: swipe to delete tableview cell seems not working any more.
+https://github.com/John-Lluch/SWRevealViewController/issues/104
+
 ### long press to re-ordering tableview cells
 [reference](https://github.com/bvogelzang/BVReorderTableView)
 
