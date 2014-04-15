@@ -490,3 +490,7 @@ CGFloat scaleOfMainScreen = [UIScreen mainScreen].scale;
 }
 ```
 [reference](http://stackoverflow.com/questions/18756196/how-to-dismiss-keyboard-when-user-tap-other-area-outside-textfield)
+
+### textfield werid behavior
+[ref](http://stackoverflow.com/questions/14252470/how-to-dismiss-keyboard-on-second-time-selecting-first-textfield)
+[ref2](http://stackoverflow.com/questions/10051402/keyboard-not-responding-to-resignfirstresponder)
