@@ -464,7 +464,15 @@ UIView * separator = [[UIView alloc] initWithFrame:CGRectMake(20, 104, 320, (1.0
     separator.backgroundColor = [UIColor colorWithWhite:0.7 alpha:1];
     [self.view addSubview:separator];
 ```
-
+#### how to make the line exactly 1px for both normal iOS device as well as retina display device?
+```objective-c
+CGFloat scaleOfMainScreen = [UIScreen mainScreen].scale;
+    CGFloat alwaysOnePixelInPointUnits = 1.0/scaleOfMainScreen;
+    
+    UIView * separator = [[UIView alloc] initWithFrame:CGRectMake(20, 40, 300, alwaysOnePixelInPointUnits)];
+    separator.backgroundColor = [UIColor colorWithWhite:1 alpha:0.2];
+    [self.view addSubview:separator];
+```    
 ### dismiss keyboard when user taps other area:
 ```objective-c
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
