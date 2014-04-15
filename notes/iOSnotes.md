@@ -464,3 +464,21 @@ UIView * separator = [[UIView alloc] initWithFrame:CGRectMake(20, 104, 320, (1.0
     separator.backgroundColor = [UIColor colorWithWhite:0.7 alpha:1];
     [self.view addSubview:separator];
 ```
+
+### dismiss keyboard when user taps other area:
+```objective-c
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    for (UIView * txt in self.view.subviews){
+        if ([txt isKindOfClass:[UITextField class]] && [txt isFirstResponder]) {
+            [txt resignFirstResponder];
+        }
+    }
+}
+
+/*OR*/
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];    
+}
+```
+[reference](http://stackoverflow.com/questions/18756196/how-to-dismiss-keyboard-when-user-tap-other-area-outside-textfield)
