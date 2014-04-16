@@ -498,3 +498,9 @@ CGFloat scaleOfMainScreen = [UIScreen mainScreen].scale;
 
 ### how to implement movable/reorder tableview cells?
 [ref1](https://github.com/yonat/EditableList)
+
+
+### NSArray and NSMutableArray
+```objective-c
+NSArray* arr = [[NSArray alloc]initWithObjects:@"work",@"email",@"dreamon",@"aaa",@"bbb",@"ccc", nil];
+```
