@@ -23,6 +23,8 @@ using System.Diagnostics;
 // then add debug message when needed
 Debug.WriteLine("init the main window");
 ```
+### how to do linear/least square regression?
+[ref](http://www.codeproject.com/Articles/63170/Least-Squares-Regression-for-Quadratic-Curve-Fitti)
 
 ### how to draw chart in wpf?
 by default there is no chart component in toolbox, I found a few chart library can be used.
