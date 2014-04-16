@@ -494,3 +494,7 @@ CGFloat scaleOfMainScreen = [UIScreen mainScreen].scale;
 ### textfield werid behavior
 [ref](http://stackoverflow.com/questions/14252470/how-to-dismiss-keyboard-on-second-time-selecting-first-textfield)
 [ref2](http://stackoverflow.com/questions/10051402/keyboard-not-responding-to-resignfirstresponder)
+
+
+### how to implement movable/reorder tableview cells?
+[ref1](https://github.com/yonat/EditableList)
