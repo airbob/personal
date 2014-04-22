@@ -504,3 +504,8 @@ CGFloat scaleOfMainScreen = [UIScreen mainScreen].scale;
 ```objective-c
 NSArray* arr = [[NSArray alloc]initWithObjects:@"work",@"email",@"dreamon",@"aaa",@"bbb",@"ccc", nil];
 ```
+
+### how to implement a dropdown list
+[example1](https://github.com/nmattisson/DropdownMenu)
+[example2](https://github.com/romaonthego/REMenu)
+[example3](https://github.com/BijeshNair/NIDropDown)
