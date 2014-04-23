@@ -527,3 +527,19 @@ self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@
     UIGraphicsEndImageContext();
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 ```    
+
+### swipe to delete table view cell?
+```objective-c
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return YES - we will be able to delete all rows
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Perform the real delete action here. Note: you may need to check editing style
+    //   if you do not perform delete only.
+    NSLog(@"Deleted row.");
+}
+```
