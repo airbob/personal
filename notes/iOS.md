@@ -503,6 +503,8 @@ CGFloat scaleOfMainScreen = [UIScreen mainScreen].scale;
 ### NSArray and NSMutableArray
 ```objective-c
 NSArray* arr = [[NSArray alloc]initWithObjects:@"work",@"email",@"dreamon",@"aaa",@"bbb",@"ccc", nil];
+NSMutableArray *randomSelection =  [[NSMutableArray alloc]init];
+[randomSelection addObject:@"string1"];
 ```
 
 ### how to implement a dropdown list
