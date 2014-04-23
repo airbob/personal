@@ -509,3 +509,19 @@ NSArray* arr = [[NSArray alloc]initWithObjects:@"work",@"email",@"dreamon",@"aaa
 [example1](https://github.com/nmattisson/DropdownMenu)
 [example2](https://github.com/romaonthego/REMenu)
 [example3](https://github.com/BijeshNair/NIDropDown)
+
+
+### how to set view background image?
+
+```objective-c
+self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"randomgrey.png"]];
+```
+
+#### how to stretch the image if size not fit?
+```objective-c
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"chat_blur_default9"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+```    
