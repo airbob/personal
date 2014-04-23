@@ -207,3 +207,9 @@ dataSeries.MarkerType = MarkerTypes.Square;
 ```c#
  dataSeries.LegendText = "series name";
 ```
+
+
+### how to make open dialog support multiple file extensions?
+```c#
+dlg.Filter = "CSV Files (*.csv)|*.csv|SP Files (*.SP)|*.SP";
+```
