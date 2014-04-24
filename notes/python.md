@@ -51,3 +51,10 @@ with open(path, "r+b") as fp:
         fp.truncate()
 ```
 [reference](http://stackoverflow.com/questions/2223882/whats-different-between-utf-8-and-utf-8-without-bom)
+
+### how is encoding of files work in python?
+for instance, if you use ```open_file = open(inputfile, 'r')``` if the file is utf-8 encoded, the string you read will be utf-8, you can use ``` codecs.open(inputfile, mode='w',encoding = 'utf-8')``` to set the encoding.
+
+### string is utf-8 encoded, and then write to file, why it is not standard format after write to file?
+try ```str.decode('utf-8').encode('utf-8')``` if got error, it means there are not valid utf-8 chars in it.
+try ```str.decode('utf-8','ignore').encode('utf-8')``` or find the root cause
