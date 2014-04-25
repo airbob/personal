@@ -543,3 +543,14 @@ self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@
     NSLog(@"Deleted row.");
 }
 ```
+
+
+### how to get iPhone simulator directory?
+```
+dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    docsDir = dirPaths[0];
+    NSLog(@"%@",docsDir);
+```    
+
+### how to view sqlite visually on mac?
+[try this](https://itunes.apple.com/us/app/sqlite-professional-read-only/id635299994?mt=12)
