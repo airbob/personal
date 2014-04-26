@@ -80,8 +80,22 @@ self.tableView.separatorColor = [UIColor whiteColor];
         return 40.0;
     }
 ```
-### how to conver uicolor with hex color
+### how to convert uicolor with hex color
 [reference](http://uicolor.org/)
+I note previous reference link will not work properly in 64bit iOS device, so I use following function now:
+```objective-c
+-(UIColor *)colorFromHex:(NSString *)hex {
+    unsigned int c;
+    if ([hex characterAtIndex:0] == '#') {
+        [[NSScanner scannerWithString:[hex substringFromIndex:1]] scanHexInt:&c];
+    } else {
+        [[NSScanner scannerWithString:hex] scanHexInt:&c];
+    }
+    return [UIColor colorWithRed:((c & 0xff0000) >> 16)/255.0
+                           green:((c & 0xff00) >> 8)/255.0
+                            blue:(c & 0xff)/255.0 alpha:1.0];
+}
+```
 ### hide status bar:
 ```objective-c
 - (BOOL)prefersStatusBarHidden {
