@@ -572,3 +572,26 @@ dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomain
 
 ### how to use sqlite?
 (follow this tutorial](http://www.techotopia.com/index.php/An_Example_SQLite_based_iOS_7_Application)
+
+
+### how to add iOS default share sheet?
+```objective-c
+
+    NSString *text = @"hello world";
+            NSURL *url = [NSURL URLWithString:@"http://airbob.github.io/lifeNumber"];
+            //UIImage *image = [UIImage imageNamed:@"roadfire-icon-square-200"];
+            
+            UIActivityViewController *controller =
+            [[UIActivityViewController alloc]
+             initWithActivityItems:@[text, url]
+             applicationActivities:nil];
+            
+            
+            controller.excludedActivityTypes = @[UIActivityTypePrint,
+                                                 UIActivityTypeCopyToPasteboard,
+                                                 UIActivityTypeAssignToContact,
+                                                 UIActivityTypeSaveToCameraRoll,
+                                                 UIActivityTypeAddToReadingList,
+                                                 UIActivityTypeAirDrop];
+            [self presentViewController:controller animated:YES completion:nil];
+```
