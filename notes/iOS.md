@@ -596,4 +596,8 @@ dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomain
             [self presentViewController:controller animated:YES completion:nil];
 ```
 
-###
+### how to generate months array?
+
+```objective-c
+NSArray *monthlySymbols = [[[NSDateFormatter alloc] init] shortMonthSymbols];
+```
