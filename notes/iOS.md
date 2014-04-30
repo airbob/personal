@@ -626,3 +626,23 @@ NSArray *monthlySymbols = [[[NSDateFormatter alloc] init] shortMonthSymbols];
              NSLog(@"date is %@", [dateFormatter stringFromDate:date]);
          }
 ```
+
+### how to remove file in document path
+```objective-c
+- (void)removeFile:(NSString *)fileName
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    NSString *filePath = [documentsPath stringByAppendingPathComponent:fileName];
+    NSError *error;
+    BOOL success = [fileManager removeItemAtPath:filePath error:&error];
+    if (success) {
+        NSLog(@"removed");
+    }
+    else
+    {
+        NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
+    }
+}
+```
