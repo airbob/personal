@@ -601,3 +601,28 @@ dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomain
 ```objective-c
 NSArray *monthlySymbols = [[[NSDateFormatter alloc] init] shortMonthSymbols];
 ```
+
+### how to iterate date from one year ago to today?
+```objective-c 
+    NSDate *now = [NSDate date];
+    NSDate *seventyDaysAgo = [now dateByAddingTimeInterval:-356*24*60*60];
+    //NSLog(@"70 days ago: %@", seventyDaysAgo);
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+	[dateFormatter setDateFormat:@"yyyy-MM-dd"];
+	//NSString *MyString = [dateFormatter stringFromDate:seventyDaysAgo];
+    
+    
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *oneDay = [[NSDateComponents alloc] init];
+    [oneDay setDay: 1];
+    
+    for (NSDate* date = seventyDaysAgo; [date compare: now] <= 0;
+         date = [calendar dateByAddingComponents: oneDay
+                                          toDate: date
+                                         options: 0] ) {
+             //NSLog( @"%@ in [%@,%@]", date, sevenDaysAgo, now );
+             NSLog(@"date is %@", [dateFormatter stringFromDate:date]);
+         }
+```
