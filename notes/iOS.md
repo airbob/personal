@@ -646,3 +646,12 @@ NSArray *monthlySymbols = [[[NSDateFormatter alloc] init] shortMonthSymbols];
     }
 }
 ```
+
+### how to set keyboard return action?
+Adopt the UITextFieldDelegate method and set yourself as the delegate. Implement textFieldShouldReturn: method like this,
+```objective-c
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+```
