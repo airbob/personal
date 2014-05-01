@@ -655,3 +655,12 @@ Adopt the UITextFieldDelegate method and set yourself as the delegate. Implement
     return YES;
 }
 ```
+
+### how to add hyperlink to button click?
+```objective-c 
+-(void) buttonpressed:(UIButton *)sender {
+    NSString* launchUrl = @"http://apple.com/";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: launchUrl]];
+}
+
+```
