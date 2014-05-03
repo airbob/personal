@@ -231,6 +231,7 @@ Please search for whole project of CFBundleDisplayName, maybe it is hardcoded so
 ### when add segue for modal view -> navigation controller view, the navigation bar disappears.
 Please connect segue from modal view to navigation controller, not the navigation controller root view
 
+
 ### why UILabel change frame can not work
 Plese make sure disable auto-layout 
 ```objective-c
