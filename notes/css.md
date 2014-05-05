@@ -123,6 +123,12 @@ a[href^="http"] (start with http)
 a[href$=".pdf"] (end with pdf)
 ```
 
+### how to set gradient background color
+
+```css
+background: linear-gradient(to bottom , #ee00ff, #eeebd2);
+```
+
 ### notes
 * section * a {font-size:1.3em;} : 任何是section 孙子元素，而非子元素的a 标签都会被选中
 * 浮动非图片元素时，必须给它设定宽度，否则后果难以预料。图片无所谓，因为它本身有默认的宽度。
