@@ -668,6 +668,22 @@ Adopt the UITextFieldDelegate method and set yourself as the delegate. Implement
 
 ## sprite kit
 
+### how to add a node with image name
+
+```objective-c
+CGPoint location = [touch locationInNode:self];
+        
+        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+        
+        sprite.position = location;
+        
+        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
+        
+        [sprite runAction:[SKAction repeatActionForever:action]];
+        
+        [self addChild:sprite];
+
+```
 ### how to detect general SKNode touched?
 ```objective-c
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
