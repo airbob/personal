@@ -665,3 +665,53 @@ Adopt the UITextFieldDelegate method and set yourself as the delegate. Implement
 }
 
 ```
+
+## sprite kit
+
+### how to detect general SKNode touched?
+```objective-c
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint touchLocation = [touch locationInNode:self];
+    SKNode *touchedNode = [self nodeAtPoint:touchLocation];
+    
+    NSLog(@"touchLocation x: %f and y: %f", touchLocation.x, touchLocation.y);
+    
+    if (touchedNode != self) {
+        NSLog(@"Removed from parent.");
+        //[touchedNode removeFromParent];
+        UIViewController *vc = self.view.window.rootViewController;
+        [vc performSegueWithIdentifier:@"toSettings" sender:nil];
+    }
+}
+
+```
+
+### how to detect certain SKNode touched?
+
+```objective-c
+//assign the name property when add the node:
+        //      second label
+        SKLabelNode *myLabel2 = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        //        myLabel2.userInteractionEnabled = YES;
+        myLabel2.name = @"nodename";
+        myLabel2.text = @"Hello, World!";
+        myLabel2.fontSize = 30;
+        myLabel2.position = CGPointMake(100, 100);
+        [self addChild:myLabel2];
+        
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint touchLocation = [touch locationInNode:self];
+    SKNode *touchedNode = [self nodeAtPoint:touchLocation];
+    
+    NSLog(@"touchLocation x: %f and y: %f", touchLocation.x, touchLocation.y);
+    
+    if ([touchedNode.name isEqualToString:@"nodename"]) {
+        NSLog(@"Removed from parent.");
+        //[touchedNode removeFromParent];
+        UIViewController *vc = self.view.window.rootViewController;
+        [vc performSegueWithIdentifier:@"toSettings" sender:nil];
+    }
+}
+```
