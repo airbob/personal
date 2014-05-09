@@ -735,3 +735,9 @@ CGPoint location = [touch locationInNode:self];
 ### how to add iADS:
 
 http://www.youtube.com/watch?v=fP2ijcXbCz4
+
+### how to use blocks?
+
+[ref1]()
+[ref2]()
+[ref3]()
