@@ -731,3 +731,7 @@ CGPoint location = [touch locationInNode:self];
     }
 }
 ```
+
+### how to add iADS:
+
+http://www.youtube.com/watch?v=fP2ijcXbCz4
