@@ -741,3 +741,10 @@ http://www.youtube.com/watch?v=fP2ijcXbCz4
 [ref1](http://rypress.com/tutorials/objective-c/blocks.html)
 [ref2](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/ProgrammingWithObjectiveC.pdf)
 [ref3](http://stackoverflow.com/questions/19171206/save-a-completion-handler-as-an-object)
+
+
+## game center:
+
+### how to integrate game center in your app?
+[Ref1](http://www.appcoda.com/ios-game-kit-framework/)
+[Ref2](http://www.raywenderlich.com/3276/game-center-tutorial-for-ios-how-to-make-a-simple-multiplayer-game-part-12)
