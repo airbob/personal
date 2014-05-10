@@ -770,7 +770,43 @@ didFailToReceiveAdWithError:(NSError *)error{
 
 
 ## game center:
-
+step1: add GameKit framework<br>
+step2: import ```#import <GameKit/GameKit.h>``` and add ```GKGameCenterControllerDelegate```
+step3: add authenticate function:
+```objective-c
+#pragma mark - game center functions
+[self authenticateLocalPlayer];
+-(void)authenticateLocalPlayer{
+    GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
+    
+    localPlayer.authenticateHandler = ^(UIViewController *viewController, NSError *error){
+        if (viewController != nil) {
+            [self presentViewController:viewController animated:YES completion:nil];
+        }
+        else{
+            if ([GKLocalPlayer localPlayer].authenticated) {
+                _gameCenterEnabled = YES;
+                
+                // Get the default leaderboard identifier.
+                [[GKLocalPlayer localPlayer] loadDefaultLeaderboardIdentifierWithCompletionHandler:^(NSString *leaderboardIdentifier, NSError *error) {
+                    
+                    if (error != nil) {
+                        NSLog(@"%@", [error localizedDescription]);
+                    }
+                    else{
+                        _leaderboardIdentifier = leaderboardIdentifier;
+                        NSLog(@"leader board identifier name is %@", _leaderboardIdentifier);
+                    }
+                }];
+            }
+            
+            else{
+                _gameCenterEnabled = NO;
+            }
+        }
+    };
+}
+```
 ### how to integrate game center in your app?
 [Ref1](http://www.appcoda.com/ios-game-kit-framework/)
 [Ref2](http://www.raywenderlich.com/3276/game-center-tutorial-for-ios-how-to-make-a-simple-multiplayer-game-part-12)
