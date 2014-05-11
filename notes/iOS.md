@@ -810,3 +810,35 @@ step3: add authenticate function:
 ### how to integrate game center in your app?
 [Ref1](http://www.appcoda.com/ios-game-kit-framework/)
 [Ref2](http://www.raywenderlich.com/3276/game-center-tutorial-for-ios-how-to-make-a-simple-multiplayer-game-part-12)
+
+
+### how to set navigation bar title with a text field?
+```objective-c
+    UITextField *textField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, 200, 22)];
+        textField.text = @"Insert Title Here";
+    textField.font = [UIFont boldSystemFontOfSize:19];
+    textField.textColor = [UIColor whiteColor];
+    textField.textAlignment = NSTextAlignmentCenter;
+    textField.delegate = self;
+    self.navigationItem.titleView = textField;
+```
+
+### how to set user default and sync it?
+```objective-c
+//when set 
+[[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:@"mainTitle"];
+[[NSUserDefaults standardUserDefaults] synchronize];
+//when get
+NSString *tempTitle = [[NSUserDefaults standardUserDefaults] objectForKey:@"mainTitle"];
+```
+
+### how to detect when hit return of textfield?
+step1: add UITextFieldDelegate
+step2: add 
+```objective-c
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"text field is %@", textField.text);
+    [textField resignFirstResponder];
+    return YES;
+}
+```
