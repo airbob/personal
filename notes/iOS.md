@@ -842,3 +842,15 @@ step2: add
     return YES;
 }
 ```
+
+### how to set uibutton round corner?
+```objective-c
+    self.button.layer.masksToBounds = YES;
+    self.button.layer.cornerRadius = 5.0;
+```
+
+### how to add border with color for UIButton?
+```objective-c
+    [[self.button layer] setBorderWidth:2.0f];
+    [[self.button layer] setBorderColor:[UIColor whiteColor].CGColor];
+```
