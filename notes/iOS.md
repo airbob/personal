@@ -854,3 +854,6 @@ step2: add
     [[self.button layer] setBorderWidth:2.0f];
     [[self.button layer] setBorderColor:[UIColor whiteColor].CGColor];
 ```
+
+### how to implement long press gesture to re order the tableview items?
+[reference](http://www.raywenderlich.com/63089/cookbook-moving-table-view-cells-with-a-long-press-gesture)
