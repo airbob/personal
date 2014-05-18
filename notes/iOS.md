@@ -868,3 +868,9 @@ self.profileImageView.clipsToBounds = YES;
 self.profileImageView.layer.borderWidth = 3.0f;
 self.profileImageView.layer.borderColor = [UIColor whiteColor].CGColor;
 ```
+
+### how to programmingly add event to reminder:
+[reference](http://stackoverflow.com/questions/15864595/programatically-add-a-reminder-to-the-reminders-app)
+
+### how to implement local notification
+[reference](http://www.appcoda.com/ios-programming-local-notification-tutorial/)
