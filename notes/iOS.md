@@ -874,3 +874,16 @@ self.profileImageView.layer.borderColor = [UIColor whiteColor].CGColor;
 
 ### how to implement local notification
 [reference](http://www.appcoda.com/ios-programming-local-notification-tutorial/)
+
+### how to add clickable action for imageview?
+```objective-c
+UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetected)];
+singleTap.numberOfTapsRequired = 1;
+self.imageView.userInteractionEnabled = YES;
+[self.imageView addGestureRecognizer:singleTap];
+```
+
+### how to dismiss view controller after certain animation (such as modal view, partial curl)
+```objective-c
+[self dismissViewControllerAnimated:YES completion:nil];
+```
