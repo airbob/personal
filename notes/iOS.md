@@ -890,3 +890,10 @@ self.imageView.userInteractionEnabled = YES;
 
 ### remind the user after some period did not open the app
 [reference](http://www.youtube.com/watch?v=fnhIVCz2xJ4)
+
+### NSDate how to get several days ago?
+```objective-c
+NSDate *now = [NSDate date];
+NSDate *sevenDaysAgo = [now dateByAddingTimeInterval:-7*24*60*60];
+NSLog(@"7 days ago: %@", sevenDaysAgo);
+```
