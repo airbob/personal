@@ -887,3 +887,6 @@ self.imageView.userInteractionEnabled = YES;
 ```objective-c
 [self dismissViewControllerAnimated:YES completion:nil];
 ```
+
+### remind the user after some period did not open the app
+[reference](http://www.youtube.com/watch?v=fnhIVCz2xJ4)
