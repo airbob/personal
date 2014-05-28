@@ -86,4 +86,4 @@ db.usercollection.find().pretty()
 
 
 ## References
-[node-express-mongo quick start](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/(
+[node-express-mongo quick start](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/)
