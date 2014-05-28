@@ -66,3 +66,10 @@ https://www.youtube.com/watch?v=eRqsZqLyYaU
 ```
 mongod --dbpath c:\node\nodetest1\data
 ```
+
+### how to start mongoDB shell
+```
+c:\mongo>mongo
+MongoDB shell version: 2.4.5
+connecting to: test
+```
