@@ -2,6 +2,11 @@
 
 ## Express
 
+### use express generator to generate apps:
+```javascript
+npm install -g express-generator
+```
+
 ### express how to change port to 80?
 
 ```bash
@@ -54,3 +59,10 @@ todo2.set("title", "Title attribute set through Model.set().");
 ```
 ## require.js
 https://www.youtube.com/watch?v=eRqsZqLyYaU
+
+## mongoDB
+
+### how to change dbpath
+```
+mongod --dbpath c:\node\nodetest1\data
+```
