@@ -73,3 +73,17 @@ c:\mongo>mongo
 MongoDB shell version: 2.4.5
 connecting to: test
 ```
+
+### how to insert data
+```
+db.usercollection.insert({ "username" : "testuser1", "email" : "testuser1@testdomain.com" })
+```
+
+### how to list the data
+```
+db.usercollection.find().pretty()
+```
+
+
+## References
+[node-express-mongo quick start](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/(
