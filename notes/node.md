@@ -74,6 +74,20 @@ MongoDB shell version: 2.4.5
 connecting to: test
 ```
 
+### how to show database
+```SQL
+show dbs
+```
+### how to show collections
+```SQL
+show collections
+```
+### how to show collection contents:
+```sql
+db.collectionName.find().pretty()
+```
+
+
 ### how to insert data
 ```
 db.usercollection.insert({ "username" : "testuser1", "email" : "testuser1@testdomain.com" })
