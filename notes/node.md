@@ -83,7 +83,8 @@ db.usercollection.insert({ "username" : "testuser1", "email" : "testuser1@testdo
 ```
 db.usercollection.find().pretty()
 ```
-
+###　how to run node app using forever
+[reference](http://blog.nodejitsu.com/keep-a-nodejs-server-up-with-forever/)
 
 ## References
 [node-express-mongo quick start](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/)
