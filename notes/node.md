@@ -87,3 +87,5 @@ db.usercollection.find().pretty()
 
 ## References
 [node-express-mongo quick start](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/)
+[node-express-mongoose-demo](https://github.com/madhums/node-express-mongoose-demo/)
+[notepad demo](https://github.com/alexyoung/nodepad/blob/master/app.js)
