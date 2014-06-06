@@ -908,3 +908,6 @@ NSLog(@"7 days ago: %@", sevenDaysAgo);
 UIApplication *app = [UIApplication sharedApplication];
 [app cancelAllLocalNotifications];
 ```
+
+### weak/strong/assign/copy/retain discussion
+[reference](http://stackoverflow.com/questions/8927727/objective-c-arc-strong-vs-retain-and-weak-vs-assign(
