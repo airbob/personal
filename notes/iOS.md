@@ -911,3 +911,6 @@ UIApplication *app = [UIApplication sharedApplication];
 
 ### weak/strong/assign/copy/retain discussion
 [reference](http://stackoverflow.com/questions/8927727/objective-c-arc-strong-vs-retain-and-weak-vs-assign(
+
+### use applescript to auto login itunes
+[reference](http://computers.tutsplus.com/tutorials/creating-an-applescript-to-switch-between-multiple-itunes-accounts--mac-49681)
