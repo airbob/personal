@@ -46,7 +46,7 @@ if trueVal
 
 ### tuples
 ```swift
-//(,,,)   定义原型
+//(,,,)   定义原型,objective-c 没有,python有
 let registrationResult = (true, "username","female")
 let (isRegisterSuccess, username, gender) = registrationResult  //access method 1 
 registrationResult.0  //access method 2
