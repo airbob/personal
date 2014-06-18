@@ -43,3 +43,15 @@ if trueVal
 }
 //Int 不可以直接做Bool来用
 ```
+
+### tuples
+```swift
+//(,,,)   定义原型
+let registrationResult = (true, "username","female")
+let (isRegisterSuccess, username, gender) = registrationResult  //access method 1 
+registrationResult.0  //access method 2
+
+//tuples 2
+let registrationResult = (isRegisterSuccess:true, username:"username",gender:"female")
+registrationResult.username //access method 2
+```
