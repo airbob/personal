@@ -521,6 +521,12 @@ NSArray* arr = [[NSArray alloc]initWithObjects:@"work",@"email",@"dreamon",@"aaa
 NSMutableArray *randomSelection =  [[NSMutableArray alloc]init];
 [randomSelection addObject:@"string1"];
 ```
+### NSString and NSMutableString 区别?
+```objective-c
+//NSString is immutable , it equals to constant NSMutableString
+//NSMutableString is mutable
+
+```
 
 ### how to implement a dropdown list
 [example1](https://github.com/nmattisson/DropdownMenu)
