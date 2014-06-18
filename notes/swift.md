@@ -34,6 +34,11 @@ let numb:Int = Int(1.2) //强制类型转换
 Int.max  //64位机器会显示64位最大值 
 Int.max + 1 //报错
 Int.min - 1 //报错
+
+//String mutability:
+let String   //it is same as objective-c NSString
+var String  //it is same as objective-c NSMutableString
+
 ```
 
 #### if flow
