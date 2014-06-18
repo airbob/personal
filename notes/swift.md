@@ -166,5 +166,8 @@ arr += ["G","H"]
 arr.insert("AA", atIndex:0)
 arr.removeAtIndex(0)
 arr.removeLast()
-
+for (index,item) in emurate(arr)
+{
+  println("\(index) ---- \(item)")
+}
 ```
