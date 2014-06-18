@@ -31,6 +31,8 @@ let bignum = 1_000_000  //print 1,000,000
 let bignum_a = 1_0000_0000 //print 1,0000,0000
 
 let numb:Int = Int(1.2) //强制类型转换
+Int.max  //64位机器会显示64位最大值 
+Int.max + 1 //报错
 ```
 
 #### if flow
