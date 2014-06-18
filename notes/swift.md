@@ -39,6 +39,27 @@ Int.min - 1 //报错
 let String   //it is same as objective-c NSString
 var String  //it is same as objective-c NSMutableString
 
+//init empty string
+var emptyString = "" //method 1
+var emptyString2 = String() //method 2
+emptyString.isEmpty //check whether it is empty string
+//使用for-in 遍历字符串
+for character in str
+{
+  println(character)  //data type is Character
+}
+
+var a:Character = "!"
+var b:String = "abc"
+a = b //报错, data type error
+//字符串长度
+var str = "你好,play ground \U00001F496"
+countElements(str)
+var str2:NSString = str
+str2.length  //objective-c method, it will count wrongly sometimes
+
+
+
 ```
 
 #### if flow
