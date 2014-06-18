@@ -33,6 +33,7 @@ let bignum_a = 1_0000_0000 //print 1,0000,0000
 let numb:Int = Int(1.2) //强制类型转换
 Int.max  //64位机器会显示64位最大值 
 Int.max + 1 //报错
+Int.min - 1 //报错
 ```
 
 #### if flow
@@ -95,4 +96,27 @@ else {
 }
 
 var a:Int! //确保会有数值
+```
+
+### operators 
+```swift
+//assign operator
+var a = 2 , b = 3 
+if a = b {  //这里会报错, = operator 没有return type
+}
+//conditional operator
+let statusBarHeight = 20 
+let basicViewHeight = 568
+var inFullScreenMode = true
+var viewHeight = basicViewHeight + (isFullScreenMode? 0 : statusBarHeight)
+//Range operator
+a...b //[a,b] closed range
+a..b //[a,b) half closed
+
+for index in 1...10
+{
+  index  //constant by default
+  }
+```
+
 ```
