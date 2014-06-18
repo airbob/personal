@@ -54,4 +54,12 @@ registrationResult.0  //access method 2
 //tuples 2
 let registrationResult = (isRegisterSuccess:true, username:"username",gender:"female")
 registrationResult.username //access method 2
+
+//使用下划线(_)忽略部分数值
+let loginResult = (true, "airbob")
+let (isLoginSuccess, _) = loginResult
+if isLoginSuccess 
+{
+  println("login success")
+}
 ```
