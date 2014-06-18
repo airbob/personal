@@ -147,3 +147,13 @@ for index in 1...10
   index  //constant by default
   }
 ```
+
+### Arrays
+```swift
+//数组的存储类型不可更改
+var array = ["a","b","c"]
+var array2:String[] = ["a","b","c"]
+var array3:Array<String> = ["a","b","c"]
+var array4 = Int[]() //空数组
+
+```
