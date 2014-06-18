@@ -57,6 +57,7 @@ var str = "你好,play ground \U00001F496"
 countElements(str)
 var str2:NSString = str
 str2.length  //objective-c method, it will count wrongly sometimes
+//hasPrefix and hasSuffix
 
 
 
