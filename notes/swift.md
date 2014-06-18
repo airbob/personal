@@ -91,4 +91,6 @@ if let userAge = userInput.toInt()
 else {
   println("user input is invalid")
 }
+
+var a:Int! //确保会有数值
 ```
