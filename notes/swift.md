@@ -155,5 +155,5 @@ var array = ["a","b","c"]
 var array2:String[] = ["a","b","c"]
 var array3:Array<String> = ["a","b","c"]
 var array4 = Int[]() //空数组
-
+var array5 = Array<String>() 
 ```
