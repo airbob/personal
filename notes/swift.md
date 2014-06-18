@@ -63,3 +63,24 @@ if isLoginSuccess
   println("login success")
 }
 ```
+
+### optional variable
+```swift
+var imOptionalVar:Int?
+imOptionalVar = 12
+
+let userInput = "18"
+var age = userInput.toInt() //it returns an optional variable
+if age 
+{
+  println("your age is \(age)")   // \()打印变量
+  println("your age is" + String(age)) //报错,age is optional, can not be invoked as this
+  println("your age is" + String(age!)) //correct, optional variable 解包
+  age   //
+  age!  //解包成整型
+}
+else 
+{
+  println("user input is invalid")
+}
+```
