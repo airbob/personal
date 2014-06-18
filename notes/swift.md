@@ -83,4 +83,12 @@ else
 {
   println("user input is invalid")
 }
+//optional binding
+if let userAge = userInput.toInt()
+{
+  println("your age is \(userAge)")   
+}
+else {
+  println("user input is invalid")
+}
 ```
