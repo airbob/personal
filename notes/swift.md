@@ -156,4 +156,15 @@ var array2:String[] = ["a","b","c"]
 var array3:Array<String> = ["a","b","c"]
 var array4 = Int[]() //空数组
 var array5 = Array<String>() 
+
+var arr = ["A","B","C","D"]
+arr.count //how many items
+arr.isEmpty //false
+arr.append("E")   //append to the array
+arr += "F"   //method 2 to add item
+arr += ["G","H"]
+arr.insert("AA", atIndex:0)
+arr.removeAtIndex(0)
+arr.removeLast()
+
 ```
