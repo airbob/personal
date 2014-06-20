@@ -119,6 +119,14 @@ I note previous reference link will not work properly in 64bit iOS device, so I 
 }
 ```
 [Reference](http://stackoverflow.com/questions/11327052/push-to-next-view-by-clicking-on-table-cell-with-using-storyboard)
+
+### how to change tab bar tint color:
+```objective-c
+//in app delegate  didFinishLaunchingWithOptions add lines such as 
+[[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+[[UITabBar appearance] setBarTintColor:[UIColor yellowColor]];
+[[UITabBar appearance] setSelectedImageTintColor:[UIColor greenColor]];
+```
 ### how to hide tableviewcell selection arrow
 ```objective-c
 cell.accessoryType = UITableViewCellAccessoryNone;
