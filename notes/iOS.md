@@ -928,3 +928,7 @@ UIApplication *app = [UIApplication sharedApplication];
 
 ### use applescript to auto login itunes
 [reference](http://computers.tutsplus.com/tutorials/creating-an-applescript-to-switch-between-multiple-itunes-accounts--mac-49681)
+
+
+### iOS with different URL:
+[reference](http://iosdevelopertips.com/cocoa/launching-other-apps-within-an-iphone-application.html)
