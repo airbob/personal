@@ -67,6 +67,16 @@ https://www.youtube.com/watch?v=eRqsZqLyYaU
 mongod --dbpath c:\node\nodetest1\data
 ```
 
+### how to check mongodb running status
+```
+ps -edaf | grep mongo   # "ps" flags may differ on your OS
+ /etc/init.d/mongod status
+ service mongodb status
+```
+### how to make mongodb starts at boot
+[reference](http://askubuntu.com/questions/61503/how-to-start-mongodb-server-on-system-start)
+
+
 ### how to start mongoDB shell
 ```
 c:\mongo>mongo
