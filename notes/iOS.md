@@ -932,3 +932,11 @@ UIApplication *app = [UIApplication sharedApplication];
 
 ### iOS with different URL:
 [reference](http://iosdevelopertips.com/cocoa/launching-other-apps-within-an-iphone-application.html)
+
+
+### how to change UITableViewCellAccessory-DisclosureIndicator colour
+```objective-c
+//normally replace the arrow with an image
+
+cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"disclosureIndicator.png"]];
+```
