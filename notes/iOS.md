@@ -940,3 +940,16 @@ UIApplication *app = [UIApplication sharedApplication];
 
 cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"disclosureIndicator.png"]];
 ```
+
+### how to add uiview programmingly ?
+```objective-c
+UIView *cv = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 216)]; //creat an instance of your custom view
+    cv.backgroundColor = [UIColor colorWithRed:0.941 green:0.941 blue:0.941 alpha:1];
+    [self.view addSubview:cv]; // add to your main view
+```
+
+### how to move view up when keyboard shows up
+1. add listener to keyboard show or hide<br>
+2. set the center (up keyboard height: 216px) when keyboard shows <br>
+3. reset to original center after keyboard hide <br>
+[reference](http://stackoverflow.com/questions/16752154/move-uiview-when-keyboard-appears)
