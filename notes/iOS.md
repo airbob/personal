@@ -953,3 +953,7 @@ UIView *cv = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.hei
 2. set the center (up keyboard height: 216px) when keyboard shows <br>
 3. reset to original center after keyboard hide <br>
 [reference](http://stackoverflow.com/questions/16752154/move-uiview-when-keyboard-appears)
+
+
+### how to add search bar in tableview
+[reference](http://www.appcoda.com/search-bar-tutorial-ios7/)
