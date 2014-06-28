@@ -957,3 +957,8 @@ UIView *cv = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.hei
 
 ### how to add search bar in tableview
 [reference](http://www.appcoda.com/search-bar-tutorial-ios7/)
+
+### how to hide tab bar if needed:
+```objective-c
+self.tabBarController.tabBar.hidden=YES;
+```
