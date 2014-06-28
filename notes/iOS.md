@@ -962,3 +962,6 @@ UIView *cv = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.hei
 ```objective-c
 self.tabBarController.tabBar.hidden=YES;
 ```
+
+### how to add horizontal scrollable view menu?
+[ref](http://stackoverflow.com/questions/18069007/how-to-make-horizontal-scrolling-menu-in-ios)
