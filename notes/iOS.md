@@ -977,3 +977,14 @@ self.tabBarController.tabBar.hidden=YES;
 UITableViewController *tbc = (UITableViewController *)self.childViewControllers[0];
 [tbc.tableView reloadData];
 ```
+
+### how to trigger map view to show callout annotations?
+```objective-c
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views
+{
+    //Here
+    [mapView selectAnnotation:[[mapView annotations] lastObject] animated:YES];
+}
+```
+
+[reference](http://stackoverflow.com/questions/978897/how-to-trigger-mkannotationviews-callout-view-without-touching-the-pin)
