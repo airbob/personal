@@ -971,3 +971,9 @@ self.tabBarController.tabBar.hidden=YES;
 ```objectiv-c
 // use self.tableview insead of tableview when dequeue with identifier
 ```
+
+### how to reload data in tableview of a container view?
+```objective-c
+UITableViewController *tbc = (UITableViewController *)self.childViewControllers[0];
+[tbc.tableView reloadData];
+```
