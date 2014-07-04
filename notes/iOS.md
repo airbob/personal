@@ -52,6 +52,11 @@ tableview-> attribule inspector -> separator -> single line
 self.tableView.separatorColor = [UIColor whiteColor];
 ```
 
+### objecitve-c syntax related:
++: class method <br>
+-: instance method <br>
+filename+filename.h/m: That is the convention for naming files, that contain categories for existing classes. Categories are a way of adding methods to an existing class in Objective-C, without subclassing
+
 ###how to change tableview background color
 ```objective-c
 [self.tableView setBackgroundColor:[UIColor yellowColor]];
