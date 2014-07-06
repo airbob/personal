@@ -1022,3 +1022,10 @@ self.mainLabel.lineBreakMode = NSLineBreakByWordWrapping;
 ### articles
 [do not abuse app delegate](http://www.hollance.com/2012/02/dont-abuse-the-app-delegate/)
 
+### long press gesture for image view
+[ref](http://stackoverflow.com/questions/17833150/long-press-gesture-and-movement-of-uiimageview)
+
+### how to implement uicollectionview
+
+### for imageview tap gesture, how to reference the sender?
+[ref](http://stackoverflow.com/questions/6082244/uitapgesturerecognizer-selector-sender-is-the-gesture-not-the-ui-object)
