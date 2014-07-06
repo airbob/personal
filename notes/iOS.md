@@ -1016,3 +1016,9 @@ self.mainLabel.lineBreakMode = NSLineBreakByWordWrapping;
 //If you implement UILabel in UItableView, still use boundingRectWithSize to calculate height of UILabel, then calculate the offset accordingly
 ```
 [reference](http://stackoverflow.com/questions/12789013/ios-multi-line-uilabel-in-auto-layout)
+
+
+
+### articles
+[do not abuse app delegate](http://www.hollance.com/2012/02/dont-abuse-the-app-delegate/)
+
