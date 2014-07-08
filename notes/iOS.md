@@ -1031,3 +1031,21 @@ self.mainLabel.lineBreakMode = NSLineBreakByWordWrapping;
 
 ### for imageview tap gesture, how to reference the sender?
 [ref](http://stackoverflow.com/questions/6082244/uitapgesturerecognizer-selector-sender-is-the-gesture-not-the-ui-object)
+
+### how to display and dismiss modal view programmingly?
+```objective-c
+[self presentViewController:modalViewController animated:YES completion:nil];
+[self dismissViewControllerAnimated:YES completion:nil];
+```
+### when display a modal view programmingly, it displays a balck screen, why?
+```objective-c
+CBModalViewController* modalViewController = [[CBModalViewController alloc] init]; //this is inconrect if you use storyboard, use following method (please note the controller identifier is the storyboard id in storyboard
+
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    
+    CBModalViewController * modalViewController = (CBModalViewController*)[mainStoryboard
+                                                                instantiateViewControllerWithIdentifier: @"CBModalViewController"];
+                                                                
+                                                                ```
+                                                                
