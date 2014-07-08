@@ -1039,13 +1039,15 @@ self.mainLabel.lineBreakMode = NSLineBreakByWordWrapping;
 ```
 ### when display a modal view programmingly, it displays a balck screen, why?
 ```objective-c
-CBModalViewController* modalViewController = [[CBModalViewController alloc] init]; //this is inconrect if you use storyboard, use following method (please note the controller identifier is the storyboard id in storyboard
+CBModalViewController* modalViewController = [[CBModalViewController alloc] init]; 
+/*this is inconrect if you use storyboard, use following method 
+(please note the controller identifier is the storyboard id in storyboard
+*/
 
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
                                                              bundle: nil];
     
     CBModalViewController * modalViewController = (CBModalViewController*)[mainStoryboard
-                                                                instantiateViewControllerWithIdentifier: @"CBModalViewController"];
-                                                                
-                                                                ```
-                                                                
+    instantiateViewControllerWithIdentifier: @"CBModalViewController"];
+```
+
