@@ -1064,3 +1064,17 @@ for (UIView* view in self.tabBar.subviews)
         NSLog(@"view descritipon %@", view.description);
     }
 ```
+
+### how remove the 1px black border under navigation bar?
+```
+//need to add a subview to overlay it
+UIView *navBorder = [[UIView alloc] initWithFrame:CGRectMake(0,navigationBar.frame.size.height-1,navigationBar.frame.size.width, 1)]; 
+
+// Change the frame size to suit yours //
+
+[navBorder setBackgroundColor:[UIColor colorWithWhite:200.0f/255.f alpha:0.8f]];
+[navBorder setOpaque:YES];
+[navigationBar addSubview:navBorder];
+[navBorder release];
+```
+more discussion can be found [here](http://stackoverflow.com/questions/19226965/how-to-hide-ios7-uinavigationbar-1px-bottom-line)
