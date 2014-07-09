@@ -131,6 +131,8 @@ I note previous reference link will not work properly in 64bit iOS device, so I 
 [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
 [[UITabBar appearance] setBarTintColor:[UIColor yellowColor]];
 [[UITabBar appearance] setSelectedImageTintColor:[UIColor greenColor]];
+//tab bar image unselected color
+[[UIView appearanceWhenContainedIn:[UITabBar class], nil] setTintColor:[UIColor whiteColor]];
 ```
 ### how to hide tableviewcell selection arrow
 ```objective-c
