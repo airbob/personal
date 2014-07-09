@@ -1051,3 +1051,10 @@ CBModalViewController* modalViewController = [[CBModalViewController alloc] init
     instantiateViewControllerWithIdentifier: @"CBModalViewController"];
 ```
 
+### how to get position of each tab bar?
+```
+for (UIView* view in self.tabBar.subviews)
+    {
+        NSLog(@"view descritipon %@", view.description);
+    }
+```
