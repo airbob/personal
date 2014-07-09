@@ -133,6 +133,10 @@ I note previous reference link will not work properly in 64bit iOS device, so I 
 [[UITabBar appearance] setSelectedImageTintColor:[UIColor greenColor]];
 //tab bar image unselected color
 [[UIView appearanceWhenContainedIn:[UITabBar class], nil] setTintColor:[UIColor whiteColor]];
+//for the unselect image color, it can only work once, how to solve it
+UITabBarItem *item0 = [self.tabBar.items objectAtIndex:0];
+item0.image = [[UIImage imageNamed:@"tab1Unselect.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+item0.selectedImage = [UIImage imageNamed:@"tab1Select.png"];
 ```
 ### how to hide tableviewcell selection arrow
 ```objective-c
