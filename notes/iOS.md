@@ -1078,3 +1078,20 @@ UIView *navBorder = [[UIView alloc] initWithFrame:CGRectMake(0,navigationBar.fra
 [navBorder release];
 ```
 more discussion can be found [here](http://stackoverflow.com/questions/19226965/how-to-hide-ios7-uinavigationbar-1px-bottom-line)
+
+
+### how to make tableview Header not show captalized letter?
+
+```objective-c
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    if([view isKindOfClass:[UITableViewHeaderFooterView class]]){
+        UITableViewHeaderFooterView *tableViewHeaderFooterView = (UITableViewHeaderFooterView *) view;
+        
+        NSString *tempStr = [tableViewHeaderFooterView.textLabel.text lowercaseString];
+        tempStr = [tempStr stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[tempStr substringToIndex:1] uppercaseString]];
+        NSLog(@"temp Str is %@", tempStr);
+        tableViewHeaderFooterView.textLabel.text = tempStr;
+    }
+}
+```
