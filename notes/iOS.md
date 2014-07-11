@@ -1095,3 +1095,12 @@ more discussion can be found [here](http://stackoverflow.com/questions/19226965/
     }
 }
 ```
+
+### how to remove all annotations in mapview?
+```objective-c
+[mapView removeAnnotations:mapView.annotations]
+```
+
+### mapview examples?
+[apple developer map search](https://developer.apple.com/library/ios/samplecode/MapSearch/Introduction/Intro.html)
+
