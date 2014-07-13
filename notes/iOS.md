@@ -1104,3 +1104,16 @@ more discussion can be found [here](http://stackoverflow.com/questions/19226965/
 ### mapview examples?
 [apple developer map search](https://developer.apple.com/library/ios/samplecode/MapSearch/Introduction/Intro.html)
 
+
+### how to set starting view controller conditionally?
+1. uncheck is initial view in storyboard
+2. 
+```objective-c
+self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    CBFBViewController * startViewController = (CBFBViewController*)[storyboard instantiateViewControllerWithIdentifier: @"CBFBViewController"];
+    
+    self.window.rootViewController = startViewController;
+    [self.window makeKeyAndVisible];
+```
+[reference](http://stackoverflow.com/questions/10428629/programatically-set-the-initial-view-controller-using-storyboards)
