@@ -1117,3 +1117,7 @@ self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     [self.window makeKeyAndVisible];
 ```
 [reference](http://stackoverflow.com/questions/10428629/programatically-set-the-initial-view-controller-using-storyboards)
+
+
+### whose view is not in the window hierarchy problem
+normally add the present controller in viewdidappear instead of viewdidload
