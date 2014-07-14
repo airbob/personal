@@ -1144,3 +1144,18 @@ NSURL *imageURL = [NSURL URLWithString:@"http://best-posts.com/wp-content/upload
 
 ### how to cache images?
 currently I am using [SDWebImage](https://github.com/rs/SDWebImage)
+
+### how to add load more function at bottom of tableview?
+1. define a cell identifier as the bottom loading bar
+```objective-c
+-(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    int lastRow=[tableArray count];
+    if([indexPath row] == lastRow)
+    {
+        NSLog(@"going to load more");//implement your load more function
+        [self.tableView reloadData];
+        [self.tableView setNeedsDisplay];
+        }
+}
+```
