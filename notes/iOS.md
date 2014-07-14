@@ -1121,3 +1121,26 @@ self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
 
 ### whose view is not in the window hierarchy problem
 normally add the present controller in viewdidappear instead of viewdidload
+
+
+### how to load images asynchronously from NSURL?
+```objective-c
+NSURL *imageURL = [NSURL URLWithString:@"http://best-posts.com/wp-content/uploads/2014/07/hottest_world_cup_girls_07.jpg"];
+    // download the image asynchronously
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:imageURL];
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                               if ( !error )
+                               {
+                                   
+                                   UIImage *image = [[UIImage alloc] initWithData:data];
+                                   [cell.profileImage setImage:image];
+                               } else {
+                                   NSLog(@"%@", error);
+                               }
+                           }];
+```
+
+### how to cache images?
+currently I am using [SDWebImage](https://github.com/rs/SDWebImage)
