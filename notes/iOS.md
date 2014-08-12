@@ -1163,3 +1163,6 @@ currently I am using [SDWebImage](https://github.com/rs/SDWebImage)
 common reasons: <br>
 1. do you have tap gesture in the view controller? <br>
 2. did you write did selection method correctly? <br>
+
+### how to redirect to different views based on received notifications?
+http://stackoverflow.com/questions/13028233/ios-push-notification-redirect-to-view-when-app-becomes-active
