@@ -1159,3 +1159,7 @@ currently I am using [SDWebImage](https://github.com/rs/SDWebImage)
         }
 }
 ```
+### tableview cell can not select
+common reasons: <br>
+1. do you have tap gesture in the view controller? <br>
+2. did you write did selection method correctly? <br>
