@@ -384,6 +384,9 @@ NSFileManager *fileManager = [NSFileManager defaultManager];
     }
 ```
 
+### how to implement iOS7 back swipe gesture?
+[reference](http://stackoverflow.com/questions/23321332/how-to-create-custom-back-swipe-gesture-in-uinavigationcontroller-on-ios-7)
+
 ### select tableview cell and perform segue with some parameters:
 ```objective-c
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -1171,3 +1174,4 @@ http://stackoverflow.com/questions/13028233/ios-push-notification-redirect-to-vi
 ```objective-c
 cell.selectionStyle = UITableViewCellSelectionStyleNone;
 ```
+
