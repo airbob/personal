@@ -1166,3 +1166,8 @@ common reasons: <br>
 
 ### how to redirect to different views based on received notifications?
 http://stackoverflow.com/questions/13028233/ios-push-notification-redirect-to-view-when-app-becomes-active
+
+### how to set uitableviewcell selection style
+```objective-c
+cell.selectionStyle = UITableViewCellSelectionStyleNone;
+```
