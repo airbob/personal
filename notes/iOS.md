@@ -138,6 +138,9 @@ UITabBarItem *item0 = [self.tabBar.items objectAtIndex:0];
 item0.image = [[UIImage imageNamed:@"tab1Unselect.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 item0.selectedImage = [UIImage imageNamed:@"tab1Select.png"];
 ```
+### use notification to update view of another view controller 
+[reference](http://stackoverflow.com/questions/14852469/how-to-update-uilabel-from-another-viewcontroller)
+
 ### how to hide tableviewcell selection arrow
 ```objective-c
 cell.accessoryType = UITableViewCellAccessoryNone;
