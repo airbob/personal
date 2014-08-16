@@ -1178,3 +1178,6 @@ http://stackoverflow.com/questions/13028233/ios-push-notification-redirect-to-vi
 cell.selectionStyle = UITableViewCellSelectionStyleNone;
 ```
 
+
+### iOS how to manually cache an image with sdwebimage?
+[reference](http://stackoverflow.com/questions/14902835/sdwebimage-download-image-and-store-to-cache-for-key)
