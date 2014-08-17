@@ -1236,3 +1236,18 @@ myLabel.attributedText = [[NSAttributedString alloc] initWithString:@"Test strin
 
 Or using the URL reference
 
+### how to add alertview with textfield
+```objective-c
+UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title"
+                                                message:@"Message"
+                                               delegate:self
+                                      cancelButtonTitle:@"Done"
+                                      otherButtonTitles:nil];
+alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+[alert show];
+
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"%@", [alertView textFieldAtIndex:0].text);
+}
+```
