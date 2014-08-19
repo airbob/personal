@@ -1251,3 +1251,12 @@ alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     NSLog(@"%@", [alertView textFieldAtIndex:0].text);
 }
 ```
+
+### tab bar click how to go to first view of navigation controller
+```objective-c
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+  if (viewController != tabBarItemForNavControllerTab) {
+    [self.navControllerInFirstTab popToRootViewControllerAnimated:NO];
+  }
+}
+```
