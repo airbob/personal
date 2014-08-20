@@ -1260,3 +1260,6 @@ alert.alertViewStyle = UIAlertViewStylePlainTextInput;
   }
 }
 ```
+
+### how to display acitivy indicator when loading image
+[reference](http://stackoverflow.com/questions/11262204/show-activity-indicator-in-sdwebimage)
