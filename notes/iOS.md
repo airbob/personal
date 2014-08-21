@@ -1263,3 +1263,7 @@ alert.alertViewStyle = UIAlertViewStylePlainTextInput;
 
 ### how to display acitivy indicator when loading image
 [reference](http://stackoverflow.com/questions/11262204/show-activity-indicator-in-sdwebimage)
+
+### how to display picker view as keyboard slide in?
+[reference](http://stackoverflow.com/questions/18841239/how-to-show-and-hide-uipickerview-like-ios-keyboard)
+2. add picker to the action sheet. 
