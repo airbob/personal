@@ -1315,3 +1315,21 @@ so execute javascript code after scrolling:
     return YES;
 }
 ```
+
+### where to check Mac error code
+[ref](http://www.opensource.apple.com/source/CarbonHeaders/CarbonHeaders-18.1/MacErrors.h)
+
+
+### what is the best way to detect device landscape or not?
+```objective-c
+- (BOOL)isLandscape
+{
+    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    if(orientation == 0 || orientation == UIInterfaceOrientationPortrait)
+        return NO;
+    else
+        return YES;
+    
+    //return UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation); //this is not accurate some times
+}
+```
