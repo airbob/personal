@@ -1267,3 +1267,29 @@ alert.alertViewStyle = UIAlertViewStylePlainTextInput;
 ### how to display picker view as keyboard slide in?
 [reference](http://stackoverflow.com/questions/18841239/how-to-show-and-hide-uipickerview-like-ios-keyboard)
 2. add picker to the action sheet. 
+
+### how to disable uiwebview(content editable html) cursor auto move (very slightly)?
+this is because "automatic bring-field-into-view scrolling when you navigate around a web form" <br>
+For my case, I added listener to keyboard show and hide, during keyboard will show/hide set uiwebview.scrollview bounds to webview.bounds <br>
+
+```objective-c
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (self.duringWillKeyboard)
+        scrollView.bounds = self.webView.bounds;
+```
+
+### in uiwebview.scrollview scroll, some of html body style(such as height:100%) not refreshed, how to dynamically change body height?
+after some debugging I found ```webview.frame``` and ```webview.scrollview.frame``` wont change, the only thing change is ```webview.scrollview.contentoffset.y```
+
+so execute javascript code after scrolling: 
+```objective-c
+- (void)stoppedScrolling
+{
+    float newHeight = _htmlBodyHeight + self.webView.scrollView.contentOffset.y;
+    NSLog(@"old height is %f, new height is %f", _htmlBodyHeight, newHeight);
+    NSString *jsCode = [NSString stringWithFormat:@"document.body.style.height = '%fpx'",newHeight];// @"document.body.style.height = '1000px'";
+    [self.webView stringByEvaluatingJavaScriptFromString:jsCode];
+}
+```
+
+
