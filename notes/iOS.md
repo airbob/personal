@@ -1333,3 +1333,10 @@ so execute javascript code after scrolling:
     //return UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation); //this is not accurate some times
 }
 ```
+
+### how to add action to navigation title?
+method1: add uibutton
+
+method2: add tap gesture to it
+
+[ref](http://stackoverflow.com/questions/2077025/uinavigationbar-touch)
