@@ -1277,6 +1277,7 @@ For my case, I added listener to keyboard show and hide, during keyboard will sh
     if (self.duringWillKeyboard)
         scrollView.bounds = self.webView.bounds;
 ```
+[reference](https://stackoverflow.com/questions/15926260/set-uiwebview-content-not-to-move-when-keyboard-is-shown)
 
 ### in uiwebview.scrollview scroll, some of html body style(such as height:100%) not refreshed, how to dynamically change body height?
 after some debugging I found ```webview.frame``` and ```webview.scrollview.frame``` wont change, the only thing change is ```webview.scrollview.contentoffset.y```
@@ -1291,5 +1292,26 @@ so execute javascript code after scrolling:
     [self.webView stringByEvaluatingJavaScriptFromString:jsCode];
 }
 ```
+[REF](http://stackoverflow.com/questions/993280/how-to-detect-when-a-uiscrollview-has-finished-scrolling)
+
+### how to implement default iOS7 setting back swipe gesture?
+[reference](http://stackoverflow.com/questions/17209468/how-to-disable-back-swipe-gesture-in-uinavigationcontroller-on-ios-7)
+```objective-c
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    // Disable iOS 7 back gesture
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+        self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    }
+}
 
 
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    return YES;
+}
+```
