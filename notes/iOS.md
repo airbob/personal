@@ -1340,3 +1340,8 @@ method1: add uibutton
 method2: add tap gesture to it
 
 [ref](http://stackoverflow.com/questions/2077025/uinavigationbar-touch)
+
+
+### how to remove extra view in keyboard when using UIWebview has input field?
+[ref1](http://stackoverflow.com/questions/8470984/how-to-remove-prev-next-button-from-virtual-keyboard-ios)
+[ref2](https://gist.github.com/bjhomer/2048571)
