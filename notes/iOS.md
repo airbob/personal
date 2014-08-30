@@ -1345,3 +1345,6 @@ method2: add tap gesture to it
 ### how to remove extra view in keyboard when using UIWebview has input field?
 [ref1](http://stackoverflow.com/questions/8470984/how-to-remove-prev-next-button-from-virtual-keyboard-ios)
 [ref2](https://gist.github.com/bjhomer/2048571)
+
+### how to add tap gesture for nav bar title?
+[reference](http://stackoverflow.com/questions/22427439/ios-7-1-navigationbar-title-touch)
