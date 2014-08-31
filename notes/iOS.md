@@ -1355,3 +1355,6 @@ NSURL *url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html
     NSURLRequest* request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
 ```
+
+### how to auto scroll uiwebview when typing ?
+[ref](http://stackoverflow.com/questions/8523232/automatic-scrolling-when-contenteditable-designmode-in-a-uiwebview)
