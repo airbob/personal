@@ -1348,3 +1348,10 @@ method2: add tap gesture to it
 
 ### how to add tap gesture for nav bar title?
 [reference](http://stackoverflow.com/questions/22427439/ios-7-1-navigationbar-title-touch)
+
+### how to load local html
+```
+NSURL *url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html"];
+    NSURLRequest* request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+```
