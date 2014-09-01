@@ -1358,6 +1358,7 @@ NSURL *url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html
 
 ### how to auto scroll uiwebview when typing ?
 [ref](http://stackoverflow.com/questions/8523232/automatic-scrolling-when-contenteditable-designmode-in-a-uiwebview)
+[ref2](http://stackoverflow.com/questions/13867411/i-am-using-content-editable-html-loaded-in-uiwebview-i-need-the-code-to-set-the)
 
 ### keyboard display same animation as other views?
 [ref](http://stackoverflow.com/questions/19709749/animate-uiview-along-keyboard-appear-animation)
