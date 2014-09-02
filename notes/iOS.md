@@ -1362,3 +1362,6 @@ NSURL *url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html
 
 ### keyboard display same animation as other views?
 [ref](http://stackoverflow.com/questions/19709749/animate-uiview-along-keyboard-appear-animation)
+
+### how to use avaudioplayer?
+[ref](http://iosdeveloperzone.com/2012/10/01/tutorial-playing-audio-with-avaudioplayer/)
