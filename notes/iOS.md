@@ -1365,3 +1365,6 @@ NSURL *url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html
 
 ### how to use avaudioplayer?
 [ref](http://iosdeveloperzone.com/2012/10/01/tutorial-playing-audio-with-avaudioplayer/)
+
+### coredata how to print debug (SQL statments)?
+add ```-com.apple.CoreData.SQLDebug 1``` to compile scheme
