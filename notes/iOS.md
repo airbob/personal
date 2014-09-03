@@ -1368,3 +1368,10 @@ NSURL *url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html
 
 ### coredata how to print debug (SQL statments)?
 add ```-com.apple.CoreData.SQLDebug 1``` to compile scheme
+
+### table view refresh and empty view message?
+http://www.appcoda.com/pull-to-refresh-uitableview-empty/
+
+### core data tutorial
+http://www.raywenderlich.com/934/core-data-tutorial-for-ios-getting-started
+http://www.appcoda.com/core-data-tutorial-update-delete/
