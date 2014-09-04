@@ -1375,3 +1375,6 @@ http://www.appcoda.com/pull-to-refresh-uitableview-empty/
 ### core data tutorial
 http://www.raywenderlich.com/934/core-data-tutorial-for-ios-getting-started
 http://www.appcoda.com/core-data-tutorial-update-delete/
+
+### @class forward declaration
+http://stackoverflow.com/questions/3904663/what-does-class-do-in-objective-c
