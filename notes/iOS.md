@@ -1378,3 +1378,9 @@ http://www.appcoda.com/core-data-tutorial-update-delete/
 
 ### @class forward declaration
 http://stackoverflow.com/questions/3904663/what-does-class-do-in-objective-c
+
+### How to debug UIWebView with browser(say safari)
+- Add ```[NSClassFromString(@"WebView") performSelector:@selector(_enableRemoteInspector)];``` to appDelegate didFinishLaunchingWithOptions
+- In safari preference->advanced to show develop in menu
+- safari -> develop select the device/simulator and click on the webpage loaded to debug
+
