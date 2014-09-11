@@ -1384,3 +1384,5 @@ http://stackoverflow.com/questions/3904663/what-does-class-do-in-objective-c
 - In safari preference->advanced to show develop in menu
 - safari -> develop select the device/simulator and click on the webpage loaded to debug
 
+### audio play session (stop, resume, etc)
+http://stackoverflow.com/questions/10429204/how-to-handle-background-audio-playing-while-ios-device-is-locked-or-on-another
