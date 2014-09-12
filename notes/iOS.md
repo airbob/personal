@@ -1386,3 +1386,6 @@ http://stackoverflow.com/questions/3904663/what-does-class-do-in-objective-c
 
 ### audio play session (stop, resume, etc)
 http://stackoverflow.com/questions/10429204/how-to-handle-background-audio-playing-while-ios-device-is-locked-or-on-another
+
+### tableview auto height
+http://www.raywenderlich.com/73602/dynamic-table-view-cell-height-auto-layout
