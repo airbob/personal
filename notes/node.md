@@ -117,3 +117,12 @@ db.usercollection.find().pretty()
 [async loading](https://github.com/mjhea0/node-express-ajax-craigslist)
 [node and socket.io](http://www.plhwin.com/2014/05/28/nodejs-socketio/)
 [node in production](http://blog.carbonfive.com/2014/06/02/node-js-in-production/)
+
+
+## sails
+#### how to check data using the ```localDiskDb```?
+```bash
+ find ./ -name "*.db"
+.//.tmp/localDiskDb.db
+vim .//.tmp/localDiskDb.db //then you can see the data inside it
+```
