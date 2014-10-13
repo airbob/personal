@@ -120,7 +120,9 @@ db.usercollection.find().pretty()
 
 
 ## sails
-#### how to check data using the ```localDiskDb```?
+
+#### how to check data using the ```localDiskDb``` ?
+
 ```bash
  find ./ -name "*.db"
 .//.tmp/localDiskDb.db
