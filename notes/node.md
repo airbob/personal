@@ -129,6 +129,10 @@ sails new testProject
 ```javascript
 sails lift
 ```
+#### how to generate REST api;
+```
+sails generate api user
+```
 #### how to check data using the ```localDiskDb``` ?
 
 ```bash
