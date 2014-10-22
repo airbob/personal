@@ -2,7 +2,7 @@
 
 ## Express
 
-### use express generator to generate apps:
+### use express generator to generate apps:mo
 ```javascript
 npm install -g express-generator
 ```
@@ -62,51 +62,7 @@ https://www.youtube.com/watch?v=eRqsZqLyYaU
 
 ## mongoDB
 
-### how to change dbpath
-```
-mongod --dbpath c:\node\nodetest1\data
-```
 
-### how to check mongodb running status
-```
-ps -edaf | grep mongo   # "ps" flags may differ on your OS
- /etc/init.d/mongod status
- service mongodb status
-```
-### how to make mongodb starts at boot
-[reference](http://askubuntu.com/questions/61503/how-to-start-mongodb-server-on-system-start)
-
-
-### how to start mongoDB shell
-```
-c:\mongo>mongo
-MongoDB shell version: 2.4.5
-connecting to: test
-```
-
-### how to show database
-```SQL
-show dbs
-```
-### how to show collections
-```SQL
-show collections
-```
-### how to show collection contents:
-```sql
-db.collectionName.find().pretty()
-```
-
-
-### how to insert data
-```
-db.usercollection.insert({ "username" : "testuser1", "email" : "testuser1@testdomain.com" })
-```
-
-### how to list the data
-```
-db.usercollection.find().pretty()
-```
 ###　how to run node app using forever
 [reference](http://blog.nodejitsu.com/keep-a-nodejs-server-up-with-forever/)
 
