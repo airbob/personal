@@ -121,6 +121,14 @@ db.usercollection.find().pretty()
 
 ## sails
 
+#### how to create project
+```javascript
+sails new testProject
+```
+#### how to start server
+```javascript
+sails lift
+```
 #### how to check data using the ```localDiskDb``` ?
 
 ```bash
