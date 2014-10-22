@@ -140,3 +140,6 @@ sails generate api user
 .//.tmp/localDiskDb.db
 vim .//.tmp/localDiskDb.db //then you can see the data inside it
 ```
+
+#### sails reference
+[ref](http://sailsjs.org/#/documentation/reference/)
