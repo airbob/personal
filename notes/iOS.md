@@ -563,6 +563,8 @@ NSMutableArray *randomSelection =  [[NSMutableArray alloc]init];
 
 ```objective-c
 self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"randomgrey.png"]];
+//OR the following will fill and strech image if needed
+self.view.layer.contents = (id)[UIImage imageNamed:@"background.png"].CGImage;
 ```
 
 #### how to stretch the image if size not fit?
