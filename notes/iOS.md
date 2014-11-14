@@ -1391,3 +1391,13 @@ http://stackoverflow.com/questions/10429204/how-to-handle-background-audio-playi
 
 ### tableview auto height
 http://www.raywenderlich.com/73602/dynamic-table-view-cell-height-auto-layout
+
+### add underline to uibutton title ?
+```
+    NSString* buttonTitle = @"FORGOT YOUR PASSWORD ?";
+    UIColor* buttonTitleColor = [NSObject colorWithHexString:@"767D8B"];
+    NSDictionary *attrDict = @{NSFontAttributeName : [UIFont fontWithName:@"SourceSansPro-Light" size:10],NSForegroundColorAttributeName : buttonTitleColor};
+    NSMutableAttributedString *title =[[NSMutableAttributedString alloc] initWithString:buttonTitle attributes: attrDict];
+    [title addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0,[buttonTitle length])];
+    [_buttonRecoveryPassword setAttributedTitle:title forState:UIControlStateNormal];
+```
