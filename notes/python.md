@@ -1,7 +1,40 @@
 ##python notes
 ===========================
 
+## file read/write
 
+### normal file read
+```python
+    catName = "category.txt"
+    openfile0 = open(catName, 'r')
+    contents0 = openfile0.readlines()
+    for row in contents0:
+        print row 
+```
+### normal file writer
+```
+        to_file = open('output.txt', 'w')
+        to_file.write(line)
+        to_file.close()
+```
+
+### csv read
+```python
+    inputfileDays = "../output/status120.csv"
+    with open(inputfileDays, 'rb') as csvfile:
+        spamreader = csv.reader(csvfile, delimiter=',', quotechar='"')
+        for row in spamreader:
+            col0 = row[0]
+```
+
+### csv write
+```python
+ outputfile = '../output/step6p120.csv'
+    ofile  = open(outputfile, "wb")
+    csvwriter = csv.writer(ofile, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
+    rowheader = ['col0','col1']
+    csvwriter.writerow(rowheader)
+```
 
 ### how to remove punctuations from string?
 ```python
@@ -58,3 +91,12 @@ for instance, if you use ```open_file = open(inputfile, 'r')``` if the file is u
 ### string is utf-8 encoded, and then write to file, why it is not standard format after write to file?
 try ```str.decode('utf-8').encode('utf-8')``` if got error, it means there are not valid utf-8 chars in it.
 try ```str.decode('utf-8','ignore').encode('utf-8')``` or find the root cause
+
+### string to date
+```
+benchmarkDate = datetime.strptime(userDict[userid],'%Y-%m-%d')
+```
+
+### date to string
+
+
