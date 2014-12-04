@@ -1401,3 +1401,14 @@ http://www.raywenderlich.com/73602/dynamic-table-view-cell-height-auto-layout
     [title addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0,[buttonTitle length])];
     [_buttonRecoveryPassword setAttributedTitle:title forState:UIControlStateNormal];
 ```
+
+### how to log method execution time?
+```
+NSDate *methodStart = [NSDate date];
+
+/* ... Do whatever you need to do ... */
+
+NSDate *methodFinish = [NSDate date];
+NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:methodStart];
+NSLog(@"executionTime = %f", executionTime);
+```
