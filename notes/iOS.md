@@ -1412,3 +1412,6 @@ NSDate *methodFinish = [NSDate date];
 NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:methodStart];
 NSLog(@"executionTime = %f", executionTime);
 ```
+
+### how to print view hierarchy in iOS?
+```po [[UIWindow keyWindow] recursiveDescription]```
