@@ -1415,3 +1415,6 @@ NSLog(@"executionTime = %f", executionTime);
 
 ### how to print view hierarchy in iOS?
 ```po [[UIWindow keyWindow] recursiveDescription]```
+
+### scroll view auto layout problem
+[good article](http://spin.atomicobject.com/2014/03/05/uiscrollview-autolayout-ios/)
