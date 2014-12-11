@@ -1418,3 +1418,6 @@ NSLog(@"executionTime = %f", executionTime);
 
 ### scroll view auto layout problem
 [good article](http://spin.atomicobject.com/2014/03/05/uiscrollview-autolayout-ios/)
+
+### autolayout Unable to simultaneously satisfy constraints.
+[good posts](http://stackoverflow.com/questions/12943107/how-do-i-adjust-the-anchor-point-of-a-calayer-when-auto-layout-is-being-used/14105757#14105757)
