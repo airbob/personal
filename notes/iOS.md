@@ -1421,3 +1421,17 @@ NSLog(@"executionTime = %f", executionTime);
 
 ### autolayout Unable to simultaneously satisfy constraints.
 [good posts](http://stackoverflow.com/questions/12943107/how-do-i-adjust-the-anchor-point-of-a-calayer-when-auto-layout-is-being-used/14105757#14105757)
+
+### objective literal Syntax for NSArray, NSDictionary
+```
+// before
+NSArray *words = [NSArray arrayWithObjects:@"list", @"of", @"words", nil];
+// after (array with some strings and numbers)
+NSArray *words = @[@"list", @"of", @"words", @123, @3.14];
+NSDictionary *d = @{
+  @"key": @"value",
+  @"name": @"Joris",
+  @"n": @1234,
+  @3: @"string"
+};
+```
