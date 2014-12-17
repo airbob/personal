@@ -24,6 +24,8 @@ http://evanbyrne.com/blog/go-production-server-ubuntu-nginx
 
 http://railskey.wordpress.com/2014/05/31/install-gogolang-on-ubuntu/
 
+manual install
+http://golang.org/doc/install/source
 
 
 ## BeeGo framework
