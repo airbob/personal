@@ -26,7 +26,8 @@ http://railskey.wordpress.com/2014/05/31/install-gogolang-on-ubuntu/
 
 manual install
 http://golang.org/doc/install/source
-
+https://www.vultr.com/docs/installing-golang-on-ubuntu-14-04
+http://golang.org/dl/
 
 ## BeeGo framework
 
