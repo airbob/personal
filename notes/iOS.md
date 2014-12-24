@@ -1190,6 +1190,15 @@ NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @(NSUnderlin
 myLabel.attributedText = [[NSAttributedString alloc] initWithString:@"Test string" 
                                                          attributes:underlineAttribute];
 ```
+### iOS how to add underline to text in UIButton
+```objective-c
+    NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] initWithString:@"Let us know if you need more."];
+    [commentString addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0, [commentString length])];
+    [_buttonFeedBack setAttributedTitle:commentString forState:UIControlStateNormal];
+    [_buttonFeedBack setTitleColor:[NSObject colorWithHexString:@"979797"] forState:UIControlStateNormal];
+```
+
+
 [ref](http://stackoverflow.com/questions/2711297/underline-text-in-uilabel)
 
 ### how to open address with ios map?
