@@ -1444,3 +1444,10 @@ NSDictionary *d = @{
   @3: @"string"
 };
 ```
+
+### AFNetworking with fail response data
+```
+NSData *data = [operation.responseString dataUsingEncoding:NSUTF8StringEncoding];
+id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+NSString* message = @"Failed to send invitation.";
+```
