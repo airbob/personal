@@ -1451,3 +1451,6 @@ NSData *data = [operation.responseString dataUsingEncoding:NSUTF8StringEncoding]
 id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
 NSString* message = @"Failed to send invitation.";
 ```
+
+### sub project tutorial
+[tutorial](http://www.raywenderlich.com/41377/creating-a-static-library-in-ios-tutorial)
