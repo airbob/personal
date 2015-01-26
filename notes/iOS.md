@@ -1454,3 +1454,6 @@ NSString* message = @"Failed to send invitation.";
 
 ### sub project tutorial
 [tutorial](http://www.raywenderlich.com/41377/creating-a-static-library-in-ios-tutorial)
+
+### how to add extra bar button items in navigation controller?
+[tutorial](http://code-and-coffee.blogspot.sg/2013/12/adding-multiple-bar-button-items-to.html)
