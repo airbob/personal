@@ -1457,3 +1457,10 @@ NSString* message = @"Failed to send invitation.";
 
 ### how to add extra bar button items in navigation controller?
 [tutorial](http://code-and-coffee.blogspot.sg/2013/12/adding-multiple-bar-button-items-to.html)
+
+### how to load data from local json file
+```
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"UserProfile1" ofType:@"json"];
+    NSData *JSONData = [NSData dataWithContentsOfFile:filePath options:NSDataReadingMappedIfSafe error:nil];
+    NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableContainers error:nil];
+    ```
