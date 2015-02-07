@@ -1467,3 +1467,24 @@ NSString* message = @"Failed to send invitation.";
 
 ### weakify and strongfy self
 [reading](http://aceontech.com/objc/ios/2014/01/10/weakify-a-more-elegant-solution-to-weakself.html)
+
+### flip animation
+```
+- (IBAction)flipView:(id)sender {
+    [UIView transitionWithView:_viewContainer
+                      duration:0.6
+                       options:UIViewAnimationOptionTransitionFlipFromBottom
+                    animations:^{
+                        if (!flipped) {
+                            [_shelflifeTextField setHidden:NO];
+                            [_expiresButton setHidden:YES];
+                            flipped = YES;
+                        } else {
+                            [_shelflifeTextField setHidden:YES];
+                            [_expiresButton setHidden:NO];
+                            flipped = NO;
+                        }
+                        
+                    } completion:nil];
+}
+```
