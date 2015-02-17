@@ -1488,3 +1488,6 @@ NSString* message = @"Failed to send invitation.";
                     } completion:nil];
 }
 ```
+
+### pull down tableview image zoom effects
+[reference](http://stackoverflow.com/questions/14991190/tweetbot-banner-image-pull-down-to-zoom-image)
