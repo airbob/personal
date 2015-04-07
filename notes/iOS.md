@@ -1503,3 +1503,14 @@ NSString* message = @"Failed to send invitation.";
 }
 ```
 [reference](http://stackoverflow.com/questions/2798653/is-it-possible-to-determine-whether-viewcontroller-is-presented-as-modal/16764496#16764496)
+
+### how to reference UIPageControl from UIPageViewController?
+```
+NSArray *subviews = pageController.view.subviews;
+UIPageControl *thisControl = nil;
+for (int i=0; i<[subviews count]; i++) {
+    if ([[subviews objectAtIndex:i] isKindOfClass:[UIPageControl class]]) {
+        thisControl = (UIPageControl *)[subviews objectAtIndex:i];
+    }
+}
+```
