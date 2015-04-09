@@ -1514,3 +1514,10 @@ for (int i=0; i<[subviews count]; i++) {
     }
 }
 ```
+
+
+### how to refrence Launchimage from image assets?
+[discussion here](http://stackoverflow.com/questions/19107543/xcode-5-asset-catalog-how-to-reference-the-launchimage)
+
+### how to correctly use pdf as vector image? 
+[discussion here](http://stackoverflow.com/questions/25818845/how-do-vector-images-work-in-xcode-6-i-e-pdf-files)
