@@ -1521,3 +1521,6 @@ for (int i=0; i<[subviews count]; i++) {
 
 ### how to correctly use pdf as vector image? 
 [discussion here](http://stackoverflow.com/questions/25818845/how-do-vector-images-work-in-xcode-6-i-e-pdf-files)
+
+### iOS storyboard set UIColor not exactly the same problem
+[discussion here](http://stackoverflow.com/questions/28367811/color-in-storyboard-not-matching-uicolor)
