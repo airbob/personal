@@ -1524,3 +1524,6 @@ for (int i=0; i<[subviews count]; i++) {
 
 ### iOS storyboard set UIColor not exactly the same problem
 [discussion here](http://stackoverflow.com/questions/28367811/color-in-storyboard-not-matching-uicolor)
+
+### autolayout of uiview inside uiscrollview not working?
+[discussion](http://stackoverflow.com/questions/29278185/resize-uiview-inside-uiscrollview-with-autolayout-for-scrolling)
