@@ -1527,3 +1527,6 @@ for (int i=0; i<[subviews count]; i++) {
 
 ### autolayout of uiview inside uiscrollview not working?
 [discussion](http://stackoverflow.com/questions/29278185/resize-uiview-inside-uiscrollview-with-autolayout-for-scrolling)
+
+### how to make UITableView section header not hover when scroll?
+change tableview style from plain to grouped.
