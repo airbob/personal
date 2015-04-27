@@ -1530,3 +1530,16 @@ for (int i=0; i<[subviews count]; i++) {
 
 ### how to make UITableView section header not hover when scroll?
 change tableview style from plain to grouped.
+
+### how to auto adjust textview height?
+```
+//    CGSize sizeOfDescription=[descriptionText sizeWithFont:[UIFont fontWithName:@"SourceSansPro-Regular" size:16] constrainedToSize:CGSizeMake(280, CGFLOAT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+//    CGFloat heightThreshold = 80.0;
+//    CGFloat cellHeight = sizeOfDescription.height > heightThreshold ? (sizeOfDescription.height + 40) : heightThreshold;
+//    return cellHeight;
+    NSAttributedString *title = [[NSAttributedString alloc] initWithString:descriptionText attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"SourceSansPro-Regular" size:16]}];
+    UITextView *calculationView = [[UITextView alloc] init];
+    [calculationView setAttributedText:title];
+    CGSize size = [calculationView sizeThatFits:CGSizeMake(SONG_DESCRIPTION_WIDTH, FLT_MAX)];
+    return size.height + SONG_DESCRIPTION_PADDING;
+```
