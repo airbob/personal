@@ -1543,3 +1543,6 @@ change tableview style from plain to grouped.
     CGSize size = [calculationView sizeThatFits:CGSizeMake(SONG_DESCRIPTION_WIDTH, FLT_MAX)];
     return size.height + SONG_DESCRIPTION_PADDING;
 ```
+
+### icloud and core data
+[discussion](http://stackoverflow.com/questions/17065237/coredata-and-icloud)
