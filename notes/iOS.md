@@ -1549,3 +1549,15 @@ change tableview style from plain to grouped.
 
 ### disable cland warnings
 [discussion](http://useyourloaf.com/blog/2011/09/20/disabling-clang-compiler-warnings.html)
+
+### why use static inline function
+
+inline does not mean you can use the function “inline” (it is normal to use functions inside other functions; you do not need inline for that); it encourages the compiler to build the function into the code where it is used (generally with the goal of improving execution speed).
+
+static means the function name is not externally linked. If the function were not declared static, the compiler is required to make it externally visible, so that it can be linked with other object modules. To do this, the compiler must include a separate non-inline instance of the function. By declaring the function static, you are permitting all instances of it to be inlined in the current module, possibly leaving no separate instance.
+
+static inline is usually used with small functions that are better done in the calling routine than by using a call mechanism, simply because they are so short and fast that actually doing them is better than calling a separate copy. E.g.:
+
+```
+static inline double square(double x) { return x*x; }
+```
