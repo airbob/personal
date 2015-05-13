@@ -1546,3 +1546,6 @@ change tableview style from plain to grouped.
 
 ### icloud and core data
 [discussion](http://stackoverflow.com/questions/17065237/coredata-and-icloud)
+
+### disable cland warnings
+[discussion](http://useyourloaf.com/blog/2011/09/20/disabling-clang-compiler-warnings.html)
