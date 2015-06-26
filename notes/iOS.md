@@ -1588,3 +1588,34 @@ if !UIAccessibilityIsReduceTransparencyEnabled() {
 
 #### core animation ebook
 [link](http://zsisme.gitbooks.io/ios-/content/chapter1/working-with-layers.html)
+
+#### solution for round images
+
+```
+@interface UIImage (CircleMask)
+
++ (UIImage *)roundedRectImageFromImage :(UIImage *)image
+                                  size :(CGSize)imageSize
+                      withCornerRadius :(float)cornerRadius;
+
+@end
+
+@implementation UIImage(CircleMask)
+
++(UIImage*)roundedRectImageFromImage:(UIImage *)image
+                                size:(CGSize)imageSize
+                    withCornerRadius:(float)cornerRadius
+{
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0.0);   //  <= notice 0.0 as third scale parameter. It is important cause default draw scale ≠ 1.0. Try 1.0 - it will draw an ugly image..
+    CGRect bounds=(CGRect){CGPointZero,imageSize};
+    [[UIBezierPath bezierPathWithRoundedRect:bounds
+                                cornerRadius:cornerRadius] addClip];
+    [image drawInRect:bounds];
+    UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    return finalImage;
+}
+
+@end
+```
