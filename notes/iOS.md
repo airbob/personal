@@ -1619,3 +1619,12 @@ if !UIAccessibilityIsReduceTransparencyEnabled() {
 
 @end
 ```
+
+#### UIButton add to UIBarButtonItem
+
+```
+UIButton *customButton = [UIButton buttonWithType:...];
+[customButton setBackgroundImage:barButtonBackground  forState:UIControlStateNormal];
+[customButton setBackgroundImage:barButtonPressedBackground  forState:UIControlStateSelected];
+UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView: customButton];
+```
