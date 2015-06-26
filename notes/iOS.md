@@ -1582,3 +1582,9 @@ if !UIAccessibilityIsReduceTransparencyEnabled() {
     view.backgroundColor = UIColor.blackColor()
 }
 ```
+
+#### how to make crash report readable
+[this link](http://noverse.com/blog/2010/03/how-to-deal-with-an-iphone-crash-report/)
+
+#### core animation ebook
+[link](http://zsisme.gitbooks.io/ios-/content/chapter1/working-with-layers.html)
