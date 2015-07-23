@@ -1628,3 +1628,10 @@ UIButton *customButton = [UIButton buttonWithType:...];
 [customButton setBackgroundImage:barButtonPressedBackground  forState:UIControlStateSelected];
 UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView: customButton];
 ```
+
+#### obj-c runtime reference
+[reference](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ObjCRuntimeRef/index.html#//apple_ref/doc/constant_group/Objective_C_Root_Class)
+
+
+#### obj-c meta class reference
+[reference](http://www.cocoawithlove.com/2010/01/what-is-meta-class-in-objective-c.html)
