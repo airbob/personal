@@ -1636,3 +1636,7 @@ UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView: cu
 #### obj-c meta class reference
 [reference](http://www.cocoawithlove.com/2010/01/what-is-meta-class-in-objective-c.html)
 [a goold reference chart](http://www.sealiesoftware.com/blog/class%20diagram.pdf)
+
+#### dismiss keyboard when scrollview scroll
+can just change in storybord
+[reference](http://stackoverflow.com/questions/4399357/hide-keyboard-when-scroll-uitableview)
