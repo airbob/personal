@@ -1640,3 +1640,6 @@ UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView: cu
 #### dismiss keyboard when scrollview scroll
 can just change in storybord
 [reference](http://stackoverflow.com/questions/4399357/hide-keyboard-when-scroll-uitableview)
+
+#### use key path to set corner radius
+[ref](http://stackoverflow.com/questions/20477990/set-a-border-for-uibutton-in-storyboard)
