@@ -1643,3 +1643,19 @@ can just change in storybord
 
 #### use key path to set corner radius
 [ref](http://stackoverflow.com/questions/20477990/set-a-border-for-uibutton-in-storyboard)
+
+#### apply corner radius only at certain corner
+
+```
+  [self setMaskTo:myView byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerTopRight)];
+
+- (void)setMaskTo:(UIView*)view byRoundingCorners:(UIRectCorner)corners
+        {
+            UIBezierPath *rounded = [UIBezierPath bezierPathWithRoundedRect:view.bounds
+                                                          byRoundingCorners:corners
+                                                                cornerRadii:CGSizeMake(8.0, 8.0)];
+            CAShapeLayer *shape = [[CAShapeLayer alloc] init];
+            [shape setPath:rounded.CGPath];
+            view.layer.mask = shape;
+    }
+```
